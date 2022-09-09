@@ -28,6 +28,10 @@ header li a {
   text-decoration: none;
 }
 
+header li a:hover {
+  text-decoration: underline;
+}
+
 .container {
   width: 1366px;
   margin: 0 auto;
@@ -49,7 +53,11 @@ header li a {
 }
 
 section {
-  padding: 16% 0;
+  padding: 16px 0;
+}
+
+section h2 {
+  font-size: 32px;
 }
 
 section h2,
@@ -60,6 +68,7 @@ section h2,
 .articles article h3 {
   margin-top: 8px;
   margin-bottom: 8px;
+  font-size: 24px;
 }
 
 .articles article a {
@@ -67,4 +76,32 @@ section h2,
   color: #fff;
   padding: 8px;
   display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.articles article a:hover {
+  text-decoration: underline;
+}
+
+.articles article p,
+.articles article a {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#sports {
+  background-color: rgba(0,255,0,0.1);
+}
+
+#sports .articles article a {
+  background-color: #009432;
+}
+
+#economy {
+  background-color: #fffa65;
+}
+
+#economy .articles article a {
+  background-color: #ff9f1a;
 }
