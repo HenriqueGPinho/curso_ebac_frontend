@@ -49,3 +49,8 @@ ul {
   width: 300px;
   margin: auto;
 }
+
+li {
+  cursor: pointer;
+  text-decoration: none;
+}
