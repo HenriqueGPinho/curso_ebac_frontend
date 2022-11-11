@@ -5,22 +5,25 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Comparando dois números</title>
+  <title>Lista de tarefas</title>
   <link rel="stylesheet" href="./main.css" />
 </head>
 
 <body>
   <div class="container">
-    <h1>Comparando dois números</h1>
+    <h1>Lista de tarefas</h1>
+
     <form>
-      <input id="input-a" type="number" required placeholder="Primeiro valor" />
-      <h2>é menor que</h2>
-      <input id="input-b" type="number" required placeholder="Segundo valor" />
-      <div class="break"></div>
-      <button id="submit-button" type="submit">Comparar</button>
+      <input id="input-task" type="text" required placeholder="Tarefa" />
+      <button id="add-task" type="submit">Adicionar</button>
     </form>
-    <p class="alert"></p>
+
+    <ul>
+      <li>Primeira tarefa</li>
+      <li>Segunda tarefa</li>
+    </ul>
   </div>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
   <script src="./main.js"></script>
 </body>
 
