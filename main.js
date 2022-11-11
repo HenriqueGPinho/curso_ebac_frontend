@@ -5,21 +5,15 @@ updateOnClick()
 
 $('#add-task').on('click', function (e) {
   e.preventDefault()
-  
-  let task = taskInput.val()
-  
-  taskList.append(`<li id="task-${$('li').length + 1}">${task}</li>`)
 
+  taskList.append(`<li>${taskInput.val()}</li>`)
   updateOnClick()
+  taskInput.val('')
 })
 
 function updateOnClick() {
   $('li').on('click', function () {
-    if ($(this).css('text-decoration') === 'line-through') {
-      $(this).css('text-decoration', 'none')
-    } else {
-      $(this).css('text-decoration', 'line-through')
-    }
+    $(this).css('text-decoration', 'line-through')
   })
 }
 
