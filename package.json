@@ -1,5 +1,22 @@
 {
-  "dependencies": {
+  "name": "curso_ebac_frontend",
+  "description": "Repositório de exercícios do curso de front-end da EBAC",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
     "sass": "^1.60.0"
-  }
+  },
+  "scripts": {
+    "sass": "sass --watch ./source/style.scss ./build/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HenriqueGPinho/curso_ebac_frontend.git"
+  },
+  "author": "Henrique Pinho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HenriqueGPinho/curso_ebac_frontend/issues"
+  },
+  "homepage": "https://github.com/HenriqueGPinho/curso_ebac_frontend#readme"
 }
