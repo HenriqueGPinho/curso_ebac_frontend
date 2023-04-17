@@ -7,7 +7,7 @@
     "sass": "^1.60.0"
   },
   "scripts": {
-    "sass": "sass --watch ./source/style.scss ./build/style.css"
+    "sass": "sass --watch ./source/main.scss ./build/style.css"
   },
   "repository": {
     "type": "git",
