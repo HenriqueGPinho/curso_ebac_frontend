@@ -4,7 +4,7 @@
   "description": "Repositório de exercícios do curso de front-end da EBAC",
   "main": "index.js",
   "scripts": {
-    "less": "lessc ./source/styles.less ./build/styles.css --watch"
+    "less": "lessc ./source/styles.less ./build/styles.css"
   },
   "repository": {
     "type": "git",
