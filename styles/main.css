@@ -4,7 +4,7 @@
   font-family: sans-serif;
 }
 
-.produtos {
+.container {
   max-width: 640px;
   width: 100%;
   margin: 56px auto;
@@ -13,29 +13,19 @@
   grid-column-gap: 1%;
 }
 
-.produto {}
-
-/* bloco */
-
-.produto-imagem {
-  /* elemento */
+.produto__imagem {
   width: 100%;
 }
-
-.produto-nome {
-  /* elemento */
+.produto__nome {
   font-size: 1.2em;
-  margin: 8px 0;
 }
-
-.produto-descricao {
-  /* elemento */
+.produto__descricao {
   color: gray;
 }
-
-.em-destaque {
-  /* modificador */
+.produto--em-destaque {
   border: 2px solid gold;
   padding: 8px;
   background-color: #ffff42;
 }
+
+/*# sourceMappingURL=main.css.map */
