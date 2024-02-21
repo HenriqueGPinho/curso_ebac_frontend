@@ -1,23 +1,46 @@
-document.addEventListener('DOMContentLoaded', function () {
-  const avatar = document.querySelector('#profile-avatar');
-  const name = document.querySelector('#profile-name');
-  const username = document.querySelector('#profile-username');
-  const numberRepos = document.querySelector('#profile-repos');
-  const numberFollowers = document.querySelector('#profile-followers');
-  const numberFollowing = document.querySelector('#profile-following');
-  const link = document.querySelector('#profile-link')
+const Animal = function (nome, idade) {
+  this.nome = nome;
+  this.idade = idade;
 
-  fetch('https://api.github.com/users/HenriqueGPinho')
-    .then(function (r) {
-      return r.json();
-    })
-    .then(function (json) {
-      avatar.src = json.avatar_url;
-      name.innerText = json.name;
-      username.innerText = json.login;
-      numberRepos.innerText = json.public_repos;
-      numberFollowers.innerText = json.followers;
-      numberFollowing.innerText = json.following;
-      link.href = json.html_url;
-    });
-});
+  this.comer = function () {
+    console.log(`${this.nome} está comendo`);
+  }
+
+  this.dormir = function () {
+    console.log(`${this.nome} está dormindo`);
+  }
+}
+
+const Cachorro = function (nome, idade, raca, porte) {
+  this.raca = raca;
+  this.porte = porte;
+
+  Animal.call(this, nome, idade);
+
+  this.latir = function () {
+    console.log("au au");
+  }
+
+  this.abanarRabo = function () {
+    console.log(`${this.nome} está contente`);
+  }
+}
+
+const Gato = function (nome, idade, raca, pelagem) {
+  this.raca = raca;
+  this.pelagem = pelagem;
+
+  Animal.call(this, nome, idade);
+
+  this.miar = function () {
+    console.log("miau");
+  }
+
+  this.ronronar = function () {
+    console.log("prrrrrrrrrrr");
+  }
+}
+
+const animal1 = new Animal("Frederico", 13);
+const animal2 = new Cachorro("Bolinha", 4, "pug", "pequeno");
+const animal3 = new Gato("Chiquinha", 6, "persa", "branca");
