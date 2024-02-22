@@ -1,46 +1,27 @@
-const Animal = function (nome, idade) {
-  this.nome = nome;
-  this.idade = idade;
+const alunos = [
+  { nome: 'João', nota: 7 },
+  { nome: 'José', nota: 6 },
+  { nome: 'Maria', nota: 9 },
+  { nome: 'Cecília', nota: 3 },
+  { nome: 'Marcos', nota: 10 },
+  { nome: 'Ana', nota: 7 },
+  { nome: 'Julia', nota: 1 },
+  { nome: 'Carlos', nota: 5 },
+  { nome: 'Beatriz', nota: 6 },
+  { nome: 'Bruno', nota: 5 }
+];
 
-  this.comer = function () {
-    console.log(`${this.nome} está comendo`);
-  }
+function selecionarAlunosAprovados(array) {
 
-  this.dormir = function () {
-    console.log(`${this.nome} está dormindo`);
-  }
+  let alunosAprovados = [];
+
+  array.map(aluno => {
+    if (aluno.nota >= 6) {
+      alunosAprovados.push(aluno);
+    }
+  });
+
+  return alunosAprovados;
 }
 
-const Cachorro = function (nome, idade, raca, porte) {
-  this.raca = raca;
-  this.porte = porte;
-
-  Animal.call(this, nome, idade);
-
-  this.latir = function () {
-    console.log("au au");
-  }
-
-  this.abanarRabo = function () {
-    console.log(`${this.nome} está contente`);
-  }
-}
-
-const Gato = function (nome, idade, raca, pelagem) {
-  this.raca = raca;
-  this.pelagem = pelagem;
-
-  Animal.call(this, nome, idade);
-
-  this.miar = function () {
-    console.log("miau");
-  }
-
-  this.ronronar = function () {
-    console.log("prrrrrrrrrrr");
-  }
-}
-
-const animal1 = new Animal("Frederico", 13);
-const animal2 = new Cachorro("Bolinha", 4, "pug", "pequeno");
-const animal3 = new Gato("Chiquinha", 6, "persa", "branca");
+console.log(selecionarAlunosAprovados(alunos));
