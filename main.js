@@ -11,7 +11,7 @@ const alunos = [
   { nome: 'Bruno', nota: 5 }
 ];
 
-function selecionarAlunosAprovados(array) {
+const selecionarAlunosAprovados = array => {
 
   let alunosAprovados = [];
 
